@@ -66,7 +66,7 @@ xlabel('Voltage Drop Across Device [V]');
 scatter(KMSF_1_VvsD(1,:),KMSF_1_VvsD(2,:),10,"filled");
 hold off
 
-sgtitle('Voltage vs Deflection Of Deformable Membraines');
+sgtitle('Voltage vs Deflection Of Deformable Membranes');
 
 %-----------------------------------------------------------------
 %Plots Data on one big plot
@@ -77,8 +77,8 @@ plot(Epoxy_1_Test_1_VvsD(1,:),Epoxy_1_Test_1_VvsD(2,:))
 plot(Epoxy_1_Test_2_VvsD(1,:),Epoxy_1_Test_2_VvsD(2,:))
 plot(Wire_Grating_1_VvsD(1,:),Wire_Grating_1_VvsD(2,:))
 plot(KMSF_1_VvsD(1,:),KMSF_1_VvsD(2,:));
-ylabel("Membraine Defelection [nm]");
-xlabel("Voltage across Devices [Volts]");
-title('Voltage Vs Deflection Cummilitve Graph');
-legend("SU8 Membrane Test 1","SU8 Membrane Test 2", "SU8 Grating", "KMSF Mebraine 1" );
+ylabel("Membrane Deflection [nm]");
+xlabel("Voltage Across Device [Volts]");
+title('Voltage Vs Deflection Cumulative Graph');
+legend("SU8 Membrane Test 1","SU8 Membrane Test 2", "SU8 Grating", "KMSF Membrane 1" );
 hold off
