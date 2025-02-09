@@ -80,5 +80,5 @@ plot(KMSF_1_VvsD(1,:),KMSF_1_VvsD(2,:));
 ylabel("Membrane Deflection [nm]");
 xlabel("Voltage Across Device [Volts]");
 title('Voltage Vs Deflection Cumulative Graph');
-legend("SU8 Membrane Test 1","SU8 Membrane Test 2", "SU8 Grating", "KMSF Membrane 1" );
+legend({"SU8 Membrane Test 1","SU8 Membrane Test 2", "SU8 Grating", "KMSF Membrane 1"}, 'Location', 'northwest');
 hold off
