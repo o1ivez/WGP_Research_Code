@@ -37,50 +37,47 @@ KMSF1_proFilm(:,1)     = KMSF1_proFilm(:,1).*1000;
 %-----------------------------------------------------------------
 %Plot data
 figure(1); 
-subplot(521); plot(Epoxy1(:,1), Epoxy1(:,2)); hold on;
+subplot(331); plot(Epoxy1Test2(:,1), Epoxy1Test2(:,2)); hold on;
 ylabel('Deflection (nm)'); xlabel('Voltage [V]'); 
-title("SU8 Interferrometer"); hold off;
-subplot(522); plot(Epoxy1Test2(:,1), Epoxy1Test2(:,2)); hold on;
-ylabel('Deflection (nm)'); xlabel('Voltage [V]'); 
-title("SU8 Test 2 Interferrometer"); hold off;
-subplot(523); plot(Grating1(:,1), Grating1(:,2)); hold on; 
+title("SU8 Membrane 2 Interferrometer"); hold off;
+subplot(332); plot(Grating1(:,1), Grating1(:,2)); hold on; 
 ylabel('Deflection (nm)'); xlabel('Voltage [V]'); 
 title("SU8 Grating 1 Interferrometer"); hold off;
-subplot(524); plot(KMSF1(:,1), KMSF1(:,2)); hold on; 
+subplot(333); plot(KMSF1(:,1), KMSF1(:,2)); hold on; 
 ylabel('Deflection (nm)'); xlabel('Voltage [V]'); 
 title("KMSF 1 Interferrometer"); hold off;
-subplot(525); plot(KMSF2(:,1), KMSF2(:,2)); hold on; 
+subplot(334); plot(KMSF2(:,1), KMSF2(:,2)); hold on; 
 ylabel('Deflection (nm)'); xlabel('Voltage [V]'); 
 title("KMSF 2 Interferrometer"); hold off;
-subplot(526); plot(Grating2(:,1), Grating2(:,2)); hold on; 
+subplot(335); plot(Grating2(:,1), Grating2(:,2)); hold on; 
 ylabel('Deflection (nm)'); xlabel('Voltage [V]'); 
 title("SU8 Grating 2 Interferrometer"); hold off;
 
-subplot(527); plot(Grating1_proFilm(:,2), Grating1_proFilm(:,1)); hold on; 
+subplot(336); plot(Grating1_proFilm(:,2), Grating1_proFilm(:,1)); hold on; 
 ylabel('Deflection (nm)'); xlabel('Voltage [V]'); 
 title("SU8 Grating 1 ProFilm"); hold off;
-subplot(528); plot(Grating2_proFilm(:,2), Grating2_proFilm(:,1)); hold on; 
+subplot(337); plot(Grating2_proFilm(:,2), Grating2_proFilm(:,1)); hold on; 
 ylabel('Deflection (nm)'); xlabel('Voltage [V]'); 
 title("SU8 Grating 2 ProFilm"); hold off;
-subplot(529); plot(Membrane1_proFilm(:,2), Membrane1_proFilm(:,1)); hold on; 
+subplot(338); plot(Membrane1_proFilm(:,2), Membrane1_proFilm(:,1)); hold on; 
 ylabel('Deflection (nm)'); xlabel('Voltage [V]'); 
 title("SU8 Membrane ProFilm"); hold off;
-subplot(5,2,10); plot(KMSF1_proFilm(:,2), KMSF1_proFilm(:,1)); hold on; 
+subplot(339); plot(KMSF1_proFilm(:,2), KMSF1_proFilm(:,1)); hold on; 
 ylabel('Deflection (nm)'); xlabel('Voltage [V]'); 
 title("KMSF Membrane 1 ProFilm"); hold off;
 
 %Plot data on same graph
 figure(2); hold on;
-plot(Epoxy1(:,1),Epoxy1(:,2)); plot(Epoxy1Test2(:,1),Epoxy1Test2(:,2)); 
+plot(Epoxy1Test2(:,1),Epoxy1Test2(:,2)); 
 plot(Grating1(:,1),Grating1(:,2)); plot(KMSF1(:,1), KMSF1(:,2));
 plot(Grating2(:,1),Grating2(:,2));
 plot(Grating1_proFilm(:,2), Grating1_proFilm(:,1));
 plot(Grating2_proFilm(:,2), Grating2_proFilm(:,1));
 plot(Membrane1_proFilm(:,2), Membrane1_proFilm(:,1));
-plot(KMSF1_proFilm(:,2), KMSF1_proFilm(:,1));
+plot(KMSF1_proFilm(:,2), KMSF1_proFilm(:,1)); 
 ylabel("Membraine Defelection [nm]"); xlabel("Voltage across Devices [Volts]");
-legend("SU8 Membrane Test 1","SU8 Membrane Test 2", "SU8 Grating", ...
+lgd = legend("SU8 Membrane 2", "SU8 Grating 1", ...
     "KMSF Mebraine 1", "SU8 Grating 2", "SU8 Grating 1 Profilm", "SU8 Grating 2 Profilm", ...
    "SU8 Membrane Profilm", "KMSF Membrane 1 Profilm", Location="northwest");
-title('Voltage Vs Deflection Cummilitve Graph'); 
+title('Voltage Vs Deflection Cummilitve Graph');
 hold off;
